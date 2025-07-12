@@ -1,0 +1,6 @@
+[general]
+import = ["catppuccin-macchiato.toml"]
+
+[font]
+normal = {family = "JetBrainsMono Nerd Font", style = "Regular"}
+size = 11

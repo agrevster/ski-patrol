@@ -1,0 +1,30 @@
+mod_key : alt
+
+# Config
+gaps : 23 
+border_width : 2
+focused_border_colour : #eed49f
+unfocused_border_colour : #8aadf4
+swap_border_colour : #ee99a0
+
+
+# Binds
+bind : mod + r : reload_config
+bind : mod + q : close_window
+bind : mod + h : focus_next
+bind : mod + l : focus_prev
+bind : mod + shift + h : master_next
+bind : mod + shift + l : master_previous
+bind : mod + j : master_increase
+bind : mod + k : master_decrease
+bind : mod + f : fullscreen
+bind : mod + space : toggle_floating
+
+bind: mod + Return : "alacritty"
+bind: mod + b : "firefox -private"
+#bind: mod + k : "pkill Xorg"
+
+# Workspaces
+workspace : mod + 1 : move 1
+workspace : mod + 2 : move 2
+workspace : mod + 3 : move 3

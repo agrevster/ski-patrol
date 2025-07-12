@@ -1,0 +1,11 @@
+font="JetBrainsMono Nerd Font" 
+fg_name="#a6da95"
+fg_time="#b7bdf8"
+while true; do
+	time=$(date +"%H:%M")
+
+	echo "^fg(${fg_name})ski patrol  ^p(_CENTER) ^fg(${fg_time})${time}" | dzen2 -x 5 -y 0 -p -ta l -bg "#24273a" -fn font &
+	sleep 15
+done
+
+
