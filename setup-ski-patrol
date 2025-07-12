@@ -1,0 +1,12 @@
+# Instructions
+
+setup-xorg-base
+
+## Install packages
+apk add gvim bash git firefox libxcursor-dev linux-headers font-jetbrains-mono-nerd alacritty xsetroot curl dzen xclip starship
+
+git clone https://github.com/agrevster/ski-patrol ~/.config
+
+## Pull dotfiles
+
+echo "Install Xorg drivers! (check alpine wiki)"
