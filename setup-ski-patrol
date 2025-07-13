@@ -16,6 +16,10 @@ make clean install
 touch /var/log/sxwm.log
 chown alex:alex /var/log/sxwm.log
 
+#Disable root login
+passwd -d root
+passwd -l root
 
+echo "Disable root's shell access and set default shell to bash."
 
 echo "Install Xorg drivers! (check alpine wiki)"
