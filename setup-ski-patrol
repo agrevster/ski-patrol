@@ -3,7 +3,7 @@
 #setup-xorg-base
 
 ## Install packages
-apk add gvim bash git firefox libxcursor-dev linux-headers font-jetbrains-mono-nerd alacritty xsetroot curl dzen xclip starship make libx11-dev libxinerama-dev gcc musl-dev
+apk add gvim bash git firefox libxcursor-dev linux-headers font-jetbrains-mono-nerd alacritty xsetroot curl dzen xclip starship make libx11-dev libxinerama-dev gcc musl-dev xinput
 
 git clone https://github.com/agrevster/ski-patrol /home/alex/.config
 
@@ -13,6 +13,9 @@ chown -R alex:alex /opt/sxwm
 cd /opt/sxwm
 make
 make clean install
+touch /var/log/sxwm.log
+chown alex:alex /var/log/sxwm.log
+
 
 
 echo "Install Xorg drivers! (check alpine wiki)"
